@@ -1,3 +1,5 @@
+package org.cloud;
+
 import java.time.Duration;
 import java.time.LocalTime;
 

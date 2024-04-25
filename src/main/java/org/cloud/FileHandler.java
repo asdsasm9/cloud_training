@@ -1,3 +1,5 @@
+package org.cloud;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -7,7 +9,7 @@ import java.util.List;
 
 public class FileHandler {
 
-    private static final String filePath = "src/measurements.txt";
+    private static final String filePath = "src/main/resources/measurements.txt";
     public static List<Car> loadCars(){
         List<String> textLines = loadText();
         List<Car> cars = new ArrayList<>(List.of());
