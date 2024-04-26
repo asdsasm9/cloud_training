@@ -32,3 +32,9 @@ Q.idea/sonarlint/securityhotspotstore/6/0/60df58d41ddf0dd0eacac6fb74d299e17c38d1
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 w
 G.idea/sonarlint/issuestore/b/b/bbb97ee54f3b96582443e59a38e0c5585468fcbf,5/2/522ae79ca0ce99e04ee4d2b7d84c61a63fd49a2a
+X
+(src/main/java/org/cloud/entity/Book.java,3/a/3aa31bb1d050276844b3df2e2d5b83aeb707d8bc
+f
+6src/main/java/org/cloud/repository/BookRepository.java,0/4/048a33b7df1845e631df124d52735055038139ca
+`
+0src/main/java/org/cloud/service/BookService.java,6/2/6238b211b3dab09811f4fd06c5ffa4607f24166b
