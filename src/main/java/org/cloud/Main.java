@@ -1,5 +1,6 @@
 package org.cloud;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalTime;
@@ -13,11 +14,12 @@ public class Main {
     private static final CarsCounter carsCounter = new CarsCounter(FileHandler.loadCars());
 
     public static void main(String[] args) {
-        exercise2();
-        exercise3();
-        exercise4();
-        exercise5();
-        exercise6();
+        SpringApplication.run(Main.class, args);
+//        exercise2();
+//        exercise3();
+//        exercise4();
+//        exercise5();
+//        exercise6();
     }
     private static void exercise2(){
         int totalCars = carsCounter.getTotalCars();
