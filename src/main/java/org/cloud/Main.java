@@ -1,11 +1,14 @@
 package org.cloud;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.time.LocalTime;
 import java.util.Scanner;
 
 import static java.lang.System.in;
 import static java.lang.System.out;
 
+@SpringBootApplication
 public class Main {
     private static final CarsCounter carsCounter = new CarsCounter(FileHandler.loadCars());
 
