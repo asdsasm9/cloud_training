@@ -1,17 +1,9 @@
 package org.cloud;
 
-import org.cloud.entity.Book;
-import org.cloud.service.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
 
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.System.in;
@@ -19,19 +11,9 @@ import static java.lang.System.out;
 
 @SpringBootApplication
 public class Main {
-
-    private final BookService bookService;
-
     private static final CarsCounter carsCounter = new CarsCounter(FileHandler.loadCars());
-
-    @Autowired
-    public Main(BookService bookService) {
-        this.bookService = bookService;
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-
 //        exercise2();
 //        exercise3();
 //        exercise4();

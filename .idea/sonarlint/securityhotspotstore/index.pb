@@ -1,12 +1,6 @@
 
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-U
-%src/main/java/org/cloud/DBConfig.java,8/7/8773256e4b9a3e6cae460970318bfb3f76272eb0
-W
-'src/main/java/org/cloud/DataSource.java,6/0/60df58d41ddf0dd0eacac6fb74d299e17c38d180
-e
-5src/main/java/org/cloud/DataSourceInitialization.java,b/b/bbb97ee54f3b96582443e59a38e0c5585468fcbf
 Q
 !src/main/java/org/cloud/Main.java,7/4/749229599fdfbb7384604b0e532426fbde2ad50c
 :
@@ -38,3 +32,17 @@ f
 6src/main/java/org/cloud/repository/BookRepository.java,0/4/048a33b7df1845e631df124d52735055038139ca
 `
 0src/main/java/org/cloud/service/BookService.java,6/2/6238b211b3dab09811f4fd06c5ffa4607f24166b
+B
+cloud_training.iml,9/a/9a788c0b57406a5263b42b2982e2ccb75a1c7cf5
+h
+8src/test/java/org/cloud/service/BookServiceUnitTest.java,a/c/ac5a806dfa75e1fff2cc0645ce72280c42ac6de8
+X
+(src/main/java/org/cloud/FileHandler.java,0/c/0c871ab627601b7237b0828065e6729cb13b40db
+`
+0src/main/java/org/cloud/BookServiceUnitTest.java,e/a/ea73b00217abfc6480d42097a7095ba9227d4d54
+V
+&src/test/java/BookServiceUnitTest.java,9/6/96a361ebcbc9d1a65c1a71b430d53be9a2cd4252
+`
+0src/test/java/org/cloud/BookServiceUnitTest.java,c/e/ce3295e72981a2b9b927d85c50138a5107121efe
+\
+,src/test/java/org/cloud/BookServiceTest.java,9/d/9d06f7e8566bc264bdfd51c8ed6f468e6460aa6f

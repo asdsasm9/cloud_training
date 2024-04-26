@@ -1,29 +1,15 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(“×·ôþÿÿÿÿ8‚òËÒñ1J$9c079d94-4952-435e-a801-13646113dd69
-ƒ	java:S125#"<This block of commented-out lines of code should be removed.(Ž³ žþÿÿÿÿ8…òËÒñ1J$e245c7bb-a2ac-49df-8a93-da48a66e7822
-ƒ	java:S125,"<This block of commented-out lines of code should be removed.(áŽÅ¢úÿÿÿÿ8­“ÏÒñ1J$91c403e0-f846-40ea-9b73-17980a06d7ce
-t
-java:S1128"2Remove this unused import 'org.cloud.entity.Book'.(ý¿È#8±“ÏÒñ1J$61873a90-cc96-4ff0-9238-cb27c9b2c306
-Š
-java:S1128"GRemove this unused import 'org.springframework.boot.CommandLineRunner'.(È—ÿÅ8±“ÏÒñ1J$4773fbdb-b983-4392-9e62-048532781ae9
-‹
-java:S1128	"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ8±“ÏÒñ1J$61f25db8-f73e-46b9-8123-e872f30e64e3
-“
-java:S1128
-"KRemove this unused import 'org.springframework.context.annotation.Profile'.(ØÝ¥Ýøÿÿÿÿ8±“ÏÒñ1J$5d28626f-cbcc-42a0-9674-6b48b09653de
-s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8±“ÏÒñ1J$9826e8db-c61a-460d-8393-93b40c8c7251
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8²“ÏÒñ1J$2f772b71-f15d-4886-b661-6070b6683a99
-r
-java:S1068"/Remove this unused "bookService" private field.(¯—Šþ8ÁêÎÒñ1J$0065cd43-efc4-448d-b2e3-ccf88b390e69
+r	java:S106
+"+Replace this use of System.out by a logger.(“×·ôþÿÿÿÿ8‚òËÒñ1J$873347d8-9691-42e7-90f9-b81189a1e61d
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ž³ žþÿÿÿÿ8½éØÔñ1J$17568fbd-9de4-44b4-837e-5d94a2451379
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(áŽÅ¢úÿÿÿÿ8¾éØÔñ1J$8c607c9e-ab9a-4617-a4dd-c986956d3fcb
 q
-java:S11444".Remove this unused private "exercise2" method.(ÈÕ®â8‹òËÒñ1J$876c84fa-5006-4ddf-a788-044c7a178a52
+java:S1144"".Remove this unused private "exercise2" method.(ÈÕ®â8ÂéØÔñ1J$b2cae0cf-ab48-4038-8b3c-309dd52649fb
 p
-java:S1144;".Remove this unused private "exercise3" method.(Á«ÏG8‹òËÒñ1J$aa235bfa-9597-4e88-a46c-f16670bff6c1
+java:S1144)".Remove this unused private "exercise3" method.(Á«ÏG8ÂéØÔñ1J$1b476d29-dfcc-4590-9382-782561addb18
 q
-java:S1144C".Remove this unused private "exercise4" method.(¸„Ýß8‹òËÒñ1J$1f4f24e5-1833-44d4-b3ba-e38dece8e552
+java:S11441".Remove this unused private "exercise4" method.(¸„Ýß8ÂéØÔñ1J$53f90403-b539-4021-88fe-7a13538bf137
 v
-java:S1144U".Remove this unused private "exercise5" method.(°Ä÷¬ùÿÿÿÿ8‹òËÒñ1J$46515cee-5ef1-44e0-a83b-7fd52f57d915
+java:S1144C".Remove this unused private "exercise5" method.(°Ä÷¬ùÿÿÿÿ8ÂéØÔñ1J$7dbf551e-3560-40d3-889a-97cadde7387c
 q
-java:S1144a".Remove this unused private "exercise6" method.(°üž¨8‹òËÒñ1J$855271a3-6553-4fcf-b38a-2311257b1a33
+java:S1144O".Remove this unused private "exercise6" method.(°üž¨8ÂéØÔñ1J$21537126-2bf8-4e92-ae55-78ec69f3e0a8
