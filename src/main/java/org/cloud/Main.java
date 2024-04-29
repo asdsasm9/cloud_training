@@ -1,6 +1,11 @@
 package org.cloud;
 
+import org.cloud.controller.CarController;
 import org.cloud.entity.Car;
+import org.cloud.service.CarService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +19,13 @@ import java.util.Scanner;
 @SpringBootApplication
 public class Main {
 
+    private final CarService carService;
+    static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
+
+    @Autowired
+    public Main(CarService carService) {
+        this.carService = carService;
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
@@ -28,9 +40,9 @@ public class Main {
     public void dataLoading() {
         List<Car> cars = FileHandler.loadCars();
 
-
-
-//        Book book1 = new Book();
-//        book1.setName("Harry Potter");
+        for (Car car : cars) {
+            carService.save(car);
+        }
+        LOGGER.info("Initialization of cars data finished");
     }
 }

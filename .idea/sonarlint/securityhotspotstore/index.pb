@@ -58,3 +58,7 @@ _
 /src/main/java/org/cloud/service/CarService.java,e/8/e87711815e4aa59768f066cb294d479f55a23783
 X
 (src/main/java/org/cloud/CarsCounter.java,5/7/5701e8977fb1b3e2a9d126fcec46a2cf459b4dac
+e
+5src/main/java/org/cloud/controller/CarController.java,a/4/a4995b7c5770866d8a06a4a75c7e40ea8c4b9c07
+[
++src/test/java/org/cloud/CarServiceTest.java,3/7/377318341c520bfa88481dd3a5e23403342185a5
