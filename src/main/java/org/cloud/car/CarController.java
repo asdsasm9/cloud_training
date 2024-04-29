@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Optional;
 @RequestMapping("/car")
 public class CarController {
     private final CarService carService;
+    public final String CAR_NOT_EXISTING = "Car doesn't exist in the database";
     static final Logger LOGGER = LoggerFactory.getLogger(CarController.class);
     @Autowired
     public CarController(CarService carService) {
@@ -32,10 +34,11 @@ public class CarController {
     public ResponseEntity<Car> findById(@PathVariable("id") int carId) {
         LOGGER.info("Find car by id {}", carId);
         Optional<Car> car = carService.findById(carId);
-        if (car.isPresent()){
-            return ResponseEntity.ok(car.get());
+        if (car.isEmpty()){
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, CAR_NOT_EXISTING);
         }
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(car.get());
     }
 
     @PostMapping
@@ -47,13 +50,20 @@ public class CarController {
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
     public void update(@NotNull @RequestBody Car resource) {
-        //RestPreconditions.checkNotNull(carService.findById(resource.getId()));
+        if (carService.findById(resource.getId()).isEmpty()){
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, CAR_NOT_EXISTING);
+        }
         carService.update(resource);
     }
 
     @DeleteMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void delete(@PathVariable("id") Long id) {
+        if (carService.findById(id).isEmpty()){
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, CAR_NOT_EXISTING);
+        }
         carService.delete(id);
     }
 }
