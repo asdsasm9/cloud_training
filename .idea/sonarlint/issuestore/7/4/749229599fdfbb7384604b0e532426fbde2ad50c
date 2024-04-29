@@ -1,15 +1,6 @@
 
-r	java:S106
-"+Replace this use of System.out by a logger.(“×·ôþÿÿÿÿ8‚òËÒñ1J$873347d8-9691-42e7-90f9-b81189a1e61d
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ž³ žþÿÿÿÿ8½éØÔñ1J$17568fbd-9de4-44b4-837e-5d94a2451379
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(áŽÅ¢úÿÿÿÿ8¾éØÔñ1J$8c607c9e-ab9a-4617-a4dd-c986956d3fcb
+€
+java:S1854"8Remove this useless assignment to local variable "cars".(Ò¯ƒ¯úÿÿÿÿ8˜×ÙËò1J$7e4e06e4-0140-4bf6-b08e-964a9c7b17cf
 q
-java:S1144"".Remove this unused private "exercise2" method.(ÈÕ®â8ÂéØÔñ1J$b2cae0cf-ab48-4038-8b3c-309dd52649fb
-p
-java:S1144)".Remove this unused private "exercise3" method.(Á«ÏG8ÂéØÔñ1J$1b476d29-dfcc-4590-9382-782561addb18
-q
-java:S11441".Remove this unused private "exercise4" method.(¸„Ýß8ÂéØÔñ1J$53f90403-b539-4021-88fe-7a13538bf137
-v
-java:S1144C".Remove this unused private "exercise5" method.(°Ä÷¬ùÿÿÿÿ8ÂéØÔñ1J$7dbf551e-3560-40d3-889a-97cadde7387c
-q
-java:S1144O".Remove this unused private "exercise6" method.(°üž¨8ÂéØÔñ1J$21537126-2bf8-4e92-ae55-78ec69f3e0a8
+java:S1481")Remove this unused "cars" local variable.(Ò¯ƒ¯úÿÿÿÿ8˜×ÙËò1J$3650623f-eac9-4c30-9ac4-712a55944653
+ƒ	java:S125!"<This block of commented-out lines of code should be removed.(½·Øïûÿÿÿÿ8™×ÙËò1J$31e1b731-4e76-4f01-9591-bc90e53c9711

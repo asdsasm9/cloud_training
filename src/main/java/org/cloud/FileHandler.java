@@ -1,5 +1,7 @@
 package org.cloud;
 
+import org.cloud.entity.Car;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -34,7 +36,12 @@ public class FileHandler {
         int endNano = Integer.parseInt(lineParts[8]) * 1000000;
         LocalTime startTime = LocalTime.of(startHours, startMinutes, startSeconds, startNano);
         LocalTime endTime = LocalTime.of(endHours, endMinutes, endSeconds, endNano);
-        return new Car(licencePlate, startTime, endTime);
+
+        Car newCar = new Car();
+        newCar.setLicencePlate(licencePlate);
+        newCar.setStartTime(startTime);
+        newCar.setEndTime(endTime);
+        return newCar;
     }
 
     private static List<String> loadText(){

@@ -46,3 +46,15 @@ V
 0src/test/java/org/cloud/BookServiceUnitTest.java,c/e/ce3295e72981a2b9b927d85c50138a5107121efe
 \
 ,src/test/java/org/cloud/BookServiceTest.java,9/d/9d06f7e8566bc264bdfd51c8ed6f468e6460aa6f
+W
+'src/main/java/org/cloud/entity/Car.java,a/c/acea2feff71b18551b6c9a4a62ef6a020535cf2d
+e
+5src/main/java/org/cloud/repository/CarRepository.java,3/3/33a926978512ac901191bbc4466f5db72fb688ba
+f
+6src/main/java/org/cloud/service/ControllerService.java,e/4/e465809ea8e685a787e42266073ef1cd6f35a86a
+b
+2src/main/java/org/cloud/service/CarController.java,8/9/89a76b86fd233c96886e7da4c1691009ec1edbae
+_
+/src/main/java/org/cloud/service/CarService.java,e/8/e87711815e4aa59768f066cb294d479f55a23783
+X
+(src/main/java/org/cloud/CarsCounter.java,5/7/5701e8977fb1b3e2a9d126fcec46a2cf459b4dac
