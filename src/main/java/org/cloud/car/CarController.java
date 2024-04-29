@@ -1,5 +1,6 @@
 package org.cloud.car;
 
+import org.cloud.car.dto.CarCreateDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,8 +39,8 @@ public class CarController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Long create(@RequestBody Car resource) {
-        return carService.create(resource).getId();
+    public Long create(@RequestBody CarCreateDTO carCreateDTO) {
+        return carService.create(carCreateDTO).getId();
     }
 
 }

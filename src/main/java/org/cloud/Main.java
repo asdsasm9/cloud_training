@@ -1,7 +1,7 @@
 package org.cloud;
 
 import org.cloud.car.Car;
-import org.cloud.car.CarService;
+import org.cloud.car.CarRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +16,12 @@ import java.util.List;
 @SpringBootApplication
 public class Main {
 
-    private final CarService carService;
+    private final CarRepository carRepository;
     static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     @Autowired
-    public Main(CarService carService) {
-        this.carService = carService;
+    public Main(CarRepository carRepository) {
+        this.carRepository = carRepository;
     }
 
     public static void main(String[] args) {
@@ -36,10 +36,7 @@ public class Main {
 
     public void dataLoading() {
         List<Car> cars = FileHandler.loadCars();
-
-        for (Car car : cars) {
-            carService.save(car);
-        }
+        carRepository.saveAll(cars);
         LOGGER.info("Initialization of cars data finished");
     }
 }
