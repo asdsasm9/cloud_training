@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
@@ -38,9 +39,18 @@ public class CarService {
         return carRepository.save(car);
     }
 
-    public LocalTime calcLocalTime(CarTimeDTO carTimeDTO) {
+    private LocalTime calcLocalTime(CarTimeDTO carTimeDTO) {
         return LocalTime.of(carTimeDTO.getHours(), carTimeDTO.getMinutes(), carTimeDTO.getSeconds(), carTimeDTO.getNano());
     }
+
+    public Car update(@NotNull Car car){
+        return carRepository.save(car);
+    }
+
+    public void delete(@NonNull long id){
+        carRepository.deleteById(id);
+    }
+
 
 
 }

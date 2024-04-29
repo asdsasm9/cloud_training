@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,4 +44,16 @@ public class CarController {
         return carService.create(carCreateDTO).getId();
     }
 
+    @PutMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void update(@NotNull @RequestBody Car resource) {
+        //RestPreconditions.checkNotNull(carService.findById(resource.getId()));
+        carService.update(resource);
+    }
+
+    @DeleteMapping(value = "/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void delete(@PathVariable("id") Long id) {
+        carService.delete(id);
+    }
 }
