@@ -62,3 +62,11 @@ e
 5src/main/java/org/cloud/controller/CarController.java,a/4/a4995b7c5770866d8a06a4a75c7e40ea8c4b9c07
 [
 +src/test/java/org/cloud/CarServiceTest.java,3/7/377318341c520bfa88481dd3a5e23403342185a5
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+_
+/src/main/java/org/cloud/ServletInitializer.java,2/e/2ee49c087af7c39e632184106f396d0abdc8eede
+h
+8src/main/java/org/cloud/config/ServiceConfiguration.java,d/4/d4a00dd1dcb355449e55766b4fd48b02b703de19
+j
+:src/main/java/org/cloud/config/AllowOriginInterceptor.java,b/6/b66ae6c3886b9e8dc9e1f2bc15ad0d2a77bee552

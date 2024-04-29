@@ -1,6 +1,5 @@
 package org.cloud;
 
-import org.cloud.controller.CarController;
 import org.cloud.entity.Car;
 import org.cloud.service.CarService;
 import org.slf4j.Logger;
@@ -12,9 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 
-import java.time.LocalTime;
 import java.util.List;
-import java.util.Scanner;
 
 @SpringBootApplication
 public class Main {
