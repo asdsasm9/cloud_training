@@ -1,7 +1,7 @@
 package org.cloud;
 
-import org.cloud.entity.Car;
-import org.cloud.service.CarService;
+import org.cloud.car.Car;
+import org.cloud.car.CarService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

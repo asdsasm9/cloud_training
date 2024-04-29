@@ -1,6 +1,6 @@
 package org.cloud;
 
-import org.cloud.entity.Car;
+import org.cloud.car.Car;
 
 import java.io.IOException;
 import java.nio.file.Files;

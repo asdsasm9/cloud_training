@@ -1,7 +1,5 @@
-package org.cloud.service;
+package org.cloud.car;
 
-import org.cloud.entity.Car;
-import org.cloud.repository.CarRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +18,7 @@ public class CarService {
         return carRepository.findAll();
     }
 
-    public Car save(Car car) {
+    public Car create(Car car) {
         return carRepository.save(car);
     }
 

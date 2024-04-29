@@ -1,7 +1,7 @@
 package org.cloud;
 
-import org.cloud.entity.Car;
-import org.cloud.service.CarService;
+import org.cloud.car.Car;
+import org.cloud.car.CarService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

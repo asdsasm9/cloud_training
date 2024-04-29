@@ -1,4 +1,4 @@
-package org.cloud.entity;
+package org.cloud.car;
 
 import lombok.Getter;
 import lombok.NonNull;
