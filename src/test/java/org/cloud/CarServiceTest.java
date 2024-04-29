@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static java.util.Arrays.asList;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -37,15 +37,14 @@ public class CarServiceTest {
 
     @BeforeEach
     public void initData(){
-        dummy1 = getCar(1);
-        dummy2 = getCar(2);
+
     }
 
     private Car getCar(long id){
         Car newCar = new Car();
         newCar.setLicencePlate(String.valueOf(id));
         newCar.setEndTime(LocalTime.MIDNIGHT);
-        newCar.setEndTime(LocalTime.NOON);
+        newCar.setStartTime(LocalTime.NOON);
         return newCar;
     }
     private CarCreateDTO getCarCreateDTO(long id){
@@ -64,20 +63,32 @@ public class CarServiceTest {
         time.setNano(num);
         return time;
     }
+    @Test
+    public void findById() {
+        dummy1 = getCar(1);
+        dummy2 = getCar(2);
+        when(carRepository.findById(dummy1.getId())).thenReturn(Optional.ofNullable(dummy1));
+        Optional<Car> carOptional = carService.findById(dummy1.getId());
+        Assert.assertTrue(carOptional.isPresent());
+    }
 
     @Test
     public void findAll() {
+        dummy1 = getCar(1);
+        dummy2 = getCar(2);
         when(carRepository.findAll()).thenReturn(asList(dummy1, dummy2));
         List<Car> cars = carService.findAll();
         Assert.assertEquals(2, cars.size());
     }
 
     @Test
-    public void findById() {
-        long id = 1;
-        when(carRepository.findById(id)).thenReturn(Optional.ofNullable(dummy1));
-        Optional<Car> carOptional = carService.findById(id);
-        Assert.assertTrue(carOptional.isPresent());
-
+    public void update() {
+        dummy1 = getCar(1);
+        dummy2 = getCar(2);
+        dummy1.setLicencePlate("change");
+        carService.update(dummy1);
+        verify(carRepository, times(1)).save(dummy1);
     }
+
+
 }
