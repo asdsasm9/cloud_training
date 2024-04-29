@@ -35,11 +35,6 @@ public class CarServiceTest {
     private Car dummy1;
     private Car dummy2;
 
-    @BeforeEach
-    public void initData(){
-
-    }
-
     private Car getCar(long id){
         Car newCar = new Car();
         newCar.setLicencePlate(String.valueOf(id));
@@ -66,7 +61,7 @@ public class CarServiceTest {
     @Test
     public void findById() {
         dummy1 = getCar(1);
-        dummy2 = getCar(2);
+        dummy1.setId(1L);
         when(carRepository.findById(dummy1.getId())).thenReturn(Optional.ofNullable(dummy1));
         Optional<Car> carOptional = carService.findById(dummy1.getId());
         Assert.assertTrue(carOptional.isPresent());
